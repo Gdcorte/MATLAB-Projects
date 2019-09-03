@@ -52,8 +52,8 @@ while ((nIter<=nIter0)&&(deltaC>deltaC0))
         u(:,i) = coefs(:,i)./sum(coefs,2);
     end
     
-    c0 = c; %Save previous center matrix
     %Update clusters centers
+    c0 = c;
     for i=1:k
         c(i,:) = sum(u(:,i).^m.*data,1)./sum(u(:,i).^m,1);
     end

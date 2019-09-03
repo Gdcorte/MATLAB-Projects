@@ -20,11 +20,12 @@ for i=1:p_dim %fetch from the data the maximum and minimum values
 end
 c = a + (b-a)*rand(k,p_dim); %Centers matrix
 
-
-deltaC = 1e9; %Starting center variation from last iteration
-nIter = 0; %Starting number of iterations
-u = zeros(n_point, k); %Starting degree of belonging matriz
+%Initial Settings
+deltaC = 1e9;
+nIter = 0; 
+u = zeros(n_point, k);
 D = u;
+
 %Start algorithm loop
 while ((nIter<=nIter0)&&(deltaC>deltaC0))
     %Calculate distance matrices
