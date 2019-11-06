@@ -3,4 +3,4 @@ This repository contain projects developed in the university using the software 
 
 - A fuzzy c-means algorithm
 - An image segmentation algorithm
-- An ANFIS (adaptative fuzzy neural inference system) algorithm
+- An ANFIS (adaptive neuro fuzzy inference system) algorithm
